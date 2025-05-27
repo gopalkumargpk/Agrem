@@ -6,7 +6,7 @@ export default function AdminPage() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/data/fetch-data")
+    fetch("https://agrem.onrender.com/api/data/fetch-data")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch data");
         return res.json();

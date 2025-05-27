@@ -28,7 +28,7 @@ export default function MarketplaceSelector() {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/marketplaces", {
+      const response = await fetch("https://agrem.onrender.com/api/marketplaces", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
