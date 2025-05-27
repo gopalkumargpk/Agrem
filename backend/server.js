@@ -10,6 +10,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors());
+app.use(cors({ origin: "https://agrem.vercel.app/" }));
 app.use(express.json());
 
 // Connect to MongoDB
